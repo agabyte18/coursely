@@ -1,0 +1,188 @@
+.famil {
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.gochi {
+  font-family: 'Gochi Hand', cursive;
+}
+
+.pathway {
+  font-family: 'Pathway Extreme', sans-serif;
+}
+
+.spiel-container {
+  margin-top: 5rem;
+}
+
+.spiel {
+  font-family: 'Pathway Extreme', sans-serif;
+}
+
+.spiel h1 {
+  font-weight: 800;
+}
+
+.tile {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.tile-shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn-primary {
+  padding-bottom: 1rem;
+}
+
+.saddle {
+  color: saddlebrown;
+}
+
+/* courses/index */
+/* ============= */
+
+#course-list {
+  margin-top: 5rem;
+}
+
+#course-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#course-list .duration {
+  color: saddlebrown;
+}
+
+#course-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* courses/show */
+/* ============ */
+
+#course {
+  margin-top: 2rem;
+}
+
+.notes {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: start;
+}
+
+.notes li {
+  border-bottom: 2px solid saddlebrown;
+  /* border-radius: 1rem; */
+  /* padding: 0 .6rem .1rem .6rem; */
+  margin-left: 1rem;
+}
+
+#course-header {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#actions {
+  display: flex;
+  justify-content: right;
+}
+
+#actions a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.7rem;
+  color: saddlebrown;
+  border-bottom: 3px solid #fff;
+}
+
+#actions a:hover {
+  border-bottom: 3px solid saddlebrown;
+}
+
+#actions .delete {
+  color: #e84118;
+}
+
+#actions a.delete:hover {
+  border-bottom: 3px solid #e84118;
+}
+
+#lesson-list {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+#lesson-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#lesson-list li+li {
+  border-top: 1px solid #ccc;
+}
+
+#lesson-list li {
+  padding: 1rem 0;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+#lesson-list .duration {
+  color: saddlebrown;
+  font-size: 1.4rem;
+}
+
+/* courses/edit|new */
+/* ================ */
+
+.form-control {
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding-bottom: 1rem;
+}
+
+.field_with_errors>.form-control {
+  box-shadow:
+    rgba(255, 0, 0, 0.4) 0px 2px 4px,
+    rgba(255, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(255, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* lessons/show */
+/* ============= */
+
+.film-frame {
+  box-shadow:
+    3px 3px 100px 2px #000,
+    0 -1px 0 2px #000;
+  /* 3102,0102 */
+}
+
+#nav-controls {
+  padding: 2rem 1rem 5rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.material-symbols-outlined {
+  color: saddlebrown;
+  font-size: 3rem;
+  border-radius: 100%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h2>.saddle {
+  display: block;
+  font-size: 1.8rem;
+}

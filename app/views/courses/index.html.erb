@@ -1,0 +1,33 @@
+<section class="container spiel-container">
+
+  <div class="spiel text-center">
+    <h1>Get Really Really Good at React</h1>
+    <p class="fs-3 famil">
+      React-Goat is kinda like Netflix, but for [aspiring] React developers.
+    </p>
+  </div>
+
+</section>
+
+<section id="course-list" class="container">
+  <ul>
+    <div class="row famil">
+      <% @courses.each do |course| %>
+
+        <div class="offset-xl-3 col-xl-6">
+          <%= link_to course do %>
+            <li class="fs-4 tile">
+              <h2>
+                <%= course.title %>
+              </h2>
+              <span class="fs-5 duration gochi">
+                <%= course.duration %>
+              </span>
+            </li>
+            <% end %> <!-- End Link -->
+        </div> <!-- col-xl -->
+
+        <% end %> <!-- End Loop -->
+    </div> <!-- row -->
+  </ul>
+</section>

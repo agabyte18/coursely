@@ -1,0 +1,78 @@
+<section id="course" class="container famil">
+  <div class="row">
+    <div class="offset-xl-1 col-xl-10">
+
+      <div class="ratio ratio-16x9 film-frame">
+        <iframe src="https://ww.youtube.com/embed/bZ4XuyP3LsA?si=Ql3c3F0v4Mm05s6s?rel=0" title="YouTube video"
+          allowfullscreen></iframe>
+      </div>
+
+      <div id="nav-controls">
+
+        <%= link_to course_lesson_path(@course, @prev_lesson) do %>
+          <span class="material-symbols-outlined">
+            arrow_back
+          </span>
+          <% end %>
+
+            <%= link_to @course do %>
+              <span class="material-symbols-outlined">
+                undo
+              </span>
+              <% end %>
+
+                <%= link_to root_url do %>
+                  <span class="material-symbols-outlined">
+                    home
+                  </span>
+                  <% end %>
+
+                    <%= link_to course_lesson_path(@course, @next_lesson) do %>
+                      <span class="material-symbols-outlined">
+                        arrow_forward
+                      </span>
+                      <% end %>
+      </div>
+
+      <div id="course-header">
+        <h1 class="gochi text-center saddle">
+          <%= @lesson.position %>. <%= @lesson.title %>
+        </h1>
+        <!-- <ul class="text-center gochi">
+          <li>
+            <%= @lesson.duration %>
+          </li>
+        </ul> -->
+      </div> <!-- course header -->
+
+    </div> <!-- col-10 -->
+  </div> <!-- row -->
+
+  <div class="row gochi mt-5">
+    <div class="offset-xl-1 col-xl-6">
+
+      <h2 class="fs-1 mt-5">
+        <%= @course.title %>
+          <span class="saddle">
+            <%= @lessons.count %> lessons
+          </span>
+      </h2>
+
+      <ol id="lesson-list" class="mt-3">
+        <% @lessons.each do |lesson| %>
+          <li>
+            <%= link_to course_lesson_path(@course, lesson) do %>
+              <span>
+                <%= lesson.title %>
+              </span> <br />
+
+              <span class="duration">
+                <%= lesson.duration %>
+              </span>
+              <% end %> <!-- Link -->
+          </li>
+          <% end %> <!-- Loop -->
+            </ul>
+    </div> <!-- col-xl-6 -->
+  </div> <!-- row -->
+</section>

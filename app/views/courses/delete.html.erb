@@ -1,0 +1,22 @@
+<section id="course" class="container famil">
+  <div class="row">
+    <div class="col-xl-6">
+
+      <div id="course-header">
+        <h1 class="gochi">
+          <%= @course.title %>
+        </h1>
+      </div> <!-- course header -->
+
+      <p class="fs-4 mt-4">
+        Are you sure you want to delete this course?
+      </p>
+
+      <div id="actions" class="mt-5 gochi">
+        <%= link_to "No" , @course %>
+          <%= link_to "Yes" , @course, class: "delete ms-4" , data: {turbo_method: :delete} %>
+
+      </div>
+    </div> <!-- col-xl-6 -->
+  </div> <!-- row -->
+</section>

@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: demons
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: coursely_development
+
+test:
+  <<: *default
+  database: coursely_test
+
+production:
+  <<: *default
+  database: coursely_production
+  username: coursely
+  password: <%= ENV["COURSELY_DATABASE_PASSWORD"] %>
