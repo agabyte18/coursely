@@ -3,7 +3,7 @@
     <div class="offset-xl-1 col-xl-10">
 
       <div class="ratio ratio-16x9 film-frame">
-        <iframe src="https://ww.youtube.com/embed/bZ4XuyP3LsA?si=Ql3c3F0v4Mm05s6s?rel=0" title="YouTube video"
+        <iframe src="https://player.vimeo.com/video/902480723?h=51e4ebe95a" title="YouTube video"
           allowfullscreen></iframe>
       </div>
 
@@ -26,6 +26,12 @@
                     home
                   </span>
                   <% end %>
+
+                    <a href="#course-title">
+                      <span class="material-symbols-outlined">
+                        arrow_downward
+                      </span>
+                    </a>
 
                     <%= link_to course_lesson_path(@course, @next_lesson) do %>
                       <span class="material-symbols-outlined">
@@ -51,7 +57,7 @@
   <div class="row gochi mt-5">
     <div class="offset-xl-1 col-xl-6">
 
-      <h2 class="fs-1 mt-5">
+      <h2 id="course-title" class="fs-1 mt-5">
         <%= @course.title %>
           <span class="saddle">
             <%= @lessons.count %> lessons

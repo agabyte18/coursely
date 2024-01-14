@@ -178,9 +178,44 @@ Lesson.create!([
     course_id: 10
   },
   {
-    title: 'Continuous Delivery & Continuous Integration',
+    title: 'Continuous Delivery and Continuous Integration',
     duration: '10 mins, 10 secs',
     position: 5,
+    url: '',
+    course_id: 10
+  },
+  {
+    title: 'Logging and Metrics',
+    duration: '6 mins, 7 secs',
+    position: 6,
+    url: '',
+    course_id: 10
+  },
+  {
+    title: 'Intro to Gitops',
+    duration: '9 mins, 9 secs',
+    position: 7,
+    url: '',
+    course_id: 10
+  },
+  {
+    title: 'Terraform & Pulumi',
+    duration: '8 mins, 46 secs',
+    position: 8,
+    url: '',
+    course_id: 10
+  },
+  {
+    title: 'Automation Providers',
+    duration: '10 mins, 30 secs',
+    position: 9,
+    url: '',
+    course_id: 10
+  },
+  {
+    title: 'Self-hosted vs Cloud Providers',
+    duration: '12 mins, 02 secs',
+    position: 10,
     url: '',
     course_id: 10
   },
