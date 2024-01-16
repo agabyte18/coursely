@@ -79,7 +79,7 @@ Lesson.create!([
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 1,
     prev: "",
-    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-nodejs"
+    next: "complete-intro-to-react-v8/lessons/install-nodejs"
   },
   {
     title: 'Install NodeJS',
@@ -87,8 +87,8 @@ Lesson.create!([
     position: 2,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 1,
-    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/why-learn-react",
-    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-vite"
+    prev: "complete-intro-to-react-v8/lessons/why-learn-react",
+    next: "complete-intro-to-react-v8/lessons/install-vite"
   },
   {
     title: 'Install Vite',
@@ -96,8 +96,8 @@ Lesson.create!([
     position: 3,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 1,
-    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-nodejs",
-    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/your-first-react-app"
+    prev: "complete-intro-to-react-v8/lessons/install-nodejs",
+    next: "complete-intro-to-react-v8/lessons/your-first-react-app"
   },
   {
     title: 'Your First React App',
@@ -105,7 +105,7 @@ Lesson.create!([
     position: 4,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 1,
-    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-vite",
+    prev: "complete-intro-to-react-v8/lessons/install-vite",
     next: ""
   },
 
@@ -119,7 +119,7 @@ Lesson.create!([
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 2,
     prev: "",
-    next: "http://localhost:3000/courses/enterprise-typescript/lessons/setup"
+    next: "enterprise-typescript/lessons/setup"
   },
   {
     title: 'Setup',
@@ -127,8 +127,8 @@ Lesson.create!([
     position: 2,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 2,
-    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/introduction",
-    next: "http://localhost:3000/courses/enterprise-typescript/lessons/course-project"
+    prev: "enterprise-typescript/lessons/introduction",
+    next: "enterprise-typescript/lessons/course-project"
   },
   {
     title: 'Course Project',
@@ -136,8 +136,8 @@ Lesson.create!([
     position: 3,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 2,
-    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/setup",
-    next: "http://localhost:3000/courses/enterprise-typescript/lessons/gitignore"
+    prev: "enterprise-typescript/lessons/setup",
+    next: "enterprise-typescript/lessons/gitignore"
   },
   {
     title: 'GitIgnore',
@@ -145,8 +145,8 @@ Lesson.create!([
     position: 4,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 2,
-    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/course-project",
-    next: "http://localhost:3000/courses/enterprise-typescript/lessons/package-json"
+    prev: "enterprise-typescript/lessons/course-project",
+    next: "enterprise-typescript/lessons/package-json"
   },
   {
     title: 'Package.Json',
@@ -154,7 +154,7 @@ Lesson.create!([
     position: 5,
     url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
     course_id: 2,
-    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/gitignore",
+    prev: "enterprise-typescript/lessons/gitignore",
     next: ""
   },
 ])

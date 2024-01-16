@@ -6,66 +6,73 @@
         <iframe src="<%= @lesson.url %>" title="YouTube video" allowfullscreen></iframe>
       </div>
 
-      <div id="nav-controls">
+      <% base_url="http://localhost:3000/courses" %>
 
-        <!-- Go to Previous lesson -->
-        <% unless @lesson.prev.empty? %>
-          <%= link_to @lesson.prev do %>
-            <span class="material-symbols-outlined">
-              arrow_back
-            </span>
-            <% end %>
-              <% else %>
-                <span class="material-symbols-outlined">
-                  block
-                </span>
-                <% end %>
+        <% prev_lesson="#{base_url}/#{@lesson.prev}" %>
 
-                  <!-- Return to Course Home -->
-                  <%= link_to @course do %>
-                    <span class="material-symbols-outlined">
-                      undo
-                    </span>
-                    <% end %>
+          <% next_lesson="#{base_url}/#{@lesson.next}" %>
 
-                      <!-- Return to Home Page -->
-                      <%= link_to root_url do %>
-                        <span class="material-symbols-outlined">
-                          home
-                        </span>
-                        <% end %>
+            <div id="nav-controls">
 
-                          <!-- Jump down to lessons list -->
-                          <a href="#course-title">
-                            <span class="material-symbols-outlined">
-                              arrow_downward
-                            </span>
-                          </a>
+              <!-- Go to Previous lesson -->
 
-                          <!-- Go to Next lesson -->
-                          <% unless @lesson.next.empty? %>
-                            <%= link_to @lesson.next do %>
+              <% unless @lesson.prev.empty? %>
+                <%= link_to prev_lesson do %>
+                  <span class="material-symbols-outlined">
+                    arrow_back
+                  </span>
+                  <% end %>
+                    <% else %>
+                      <span class="material-symbols-outlined">
+                        block
+                      </span>
+                      <% end %>
+
+                        <!-- Return to Course Home -->
+                        <%= link_to @course do %>
+                          <span class="material-symbols-outlined">
+                            undo
+                          </span>
+                          <% end %>
+
+                            <!-- Return to Home Page -->
+                            <%= link_to root_url do %>
                               <span class="material-symbols-outlined">
-                                arrow_forward
+                                home
                               </span>
                               <% end %>
-                                <% else %>
-                                  <span class="material-symbols-outlined">
-                                    block
-                                  </span>
-                                  <% end %>
-      </div>
 
-      <div id="course-header">
-        <h1 class="gochi text-center saddle">
-          <%= @lesson.position %>. <%= @lesson.title %>
-        </h1>
-        <!-- <ul class="text-center gochi">
+                                <!-- Jump down to lessons list -->
+                                <a href="#course-title">
+                                  <span class="material-symbols-outlined">
+                                    arrow_downward
+                                  </span>
+                                </a>
+
+                                <!-- Go to Next lesson -->
+                                <% unless @lesson.next.empty? %>
+                                  <%= link_to next_lesson do %>
+                                    <span class="material-symbols-outlined">
+                                      arrow_forward
+                                    </span>
+                                    <% end %>
+                                      <% else %>
+                                        <span class="material-symbols-outlined">
+                                          block
+                                        </span>
+                                        <% end %>
+            </div>
+
+            <div id="course-header">
+              <h1 class="gochi text-center saddle">
+                <%= @lesson.position %>. <%= @lesson.title %>
+              </h1>
+              <!-- <ul class="text-center gochi">
           <li>
             <%= @lesson.duration %>
           </li>
         </ul> -->
-      </div> <!-- course header -->
+            </div> <!-- course header -->
 
     </div> <!-- col-10 -->
   </div> <!-- row -->
