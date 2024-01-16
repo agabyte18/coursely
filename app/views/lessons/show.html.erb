@@ -3,41 +3,57 @@
     <div class="offset-xl-1 col-xl-10">
 
       <div class="ratio ratio-16x9 film-frame">
-        <iframe src="https://player.vimeo.com/video/902480723?h=51e4ebe95a" title="YouTube video"
-          allowfullscreen></iframe>
+        <iframe src="<%= @lesson.url %>" title="YouTube video" allowfullscreen></iframe>
       </div>
 
       <div id="nav-controls">
 
-        <%= link_to course_lesson_path(@course, @prev_lesson) do %>
-          <span class="material-symbols-outlined">
-            arrow_back
-          </span>
-          <% end %>
+        <!-- Go to Previous lesson -->
+        <% unless @lesson.prev.empty? %>
+          <%= link_to @lesson.prev do %>
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
+            <% end %>
+              <% else %>
+                <span class="material-symbols-outlined">
+                  block
+                </span>
+                <% end %>
 
-            <%= link_to @course do %>
-              <span class="material-symbols-outlined">
-                undo
-              </span>
-              <% end %>
+                  <!-- Return to Course Home -->
+                  <%= link_to @course do %>
+                    <span class="material-symbols-outlined">
+                      undo
+                    </span>
+                    <% end %>
 
-                <%= link_to root_url do %>
-                  <span class="material-symbols-outlined">
-                    home
-                  </span>
-                  <% end %>
+                      <!-- Return to Home Page -->
+                      <%= link_to root_url do %>
+                        <span class="material-symbols-outlined">
+                          home
+                        </span>
+                        <% end %>
 
-                    <a href="#course-title">
-                      <span class="material-symbols-outlined">
-                        arrow_downward
-                      </span>
-                    </a>
+                          <!-- Jump down to lessons list -->
+                          <a href="#course-title">
+                            <span class="material-symbols-outlined">
+                              arrow_downward
+                            </span>
+                          </a>
 
-                    <%= link_to course_lesson_path(@course, @next_lesson) do %>
-                      <span class="material-symbols-outlined">
-                        arrow_forward
-                      </span>
-                      <% end %>
+                          <!-- Go to Next lesson -->
+                          <% unless @lesson.next.empty? %>
+                            <%= link_to @lesson.next do %>
+                              <span class="material-symbols-outlined">
+                                arrow_forward
+                              </span>
+                              <% end %>
+                                <% else %>
+                                  <span class="material-symbols-outlined">
+                                    block
+                                  </span>
+                                  <% end %>
       </div>
 
       <div id="course-header">

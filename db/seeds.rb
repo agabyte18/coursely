@@ -8,9 +8,16 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+
+
+# ======= #
+# Courses #
+# ======= #
+
 Course.create!([
   {
     title: 'Complete Intro to React, v8',
+    position: 1,
     duration: '5 hours, 55 mins',
     date_published: 7.days.from_now,
     description: %{
@@ -19,6 +26,7 @@ Course.create!([
   },
   {
     title: 'Enterprise TypeScript',
+    position: 2,
     duration: '5 hours, 3 mins',
     date_published: 30.days.from_now,
     description: %{
@@ -27,6 +35,7 @@ Course.create!([
   },
   {
     title: 'Intermediate TypeScript',
+    position: 3,
     duration: '5 hours, 10 mins',
     date_published: 20.days.from_now,
     description: %{
@@ -35,6 +44,7 @@ Course.create!([
   },
   {
     title: 'TypeScript 5+ Fundamentals, v4',
+    position: 4,
     duration: '5 hours, 12 mins',
     date_published: 21.days.from_now,
     description: %{
@@ -43,181 +53,109 @@ Course.create!([
   },
   {
     title: 'Astro for Fast Website Development',
+    position: 5,
     duration: '3 hours, 37 mins',
     date_published: 21.days.from_now,
     description: %{
       TypeScript adds a powerful type system to JavaScript, adding type aliases, union/intersection types, and generics. Migrate to TypeScript, enhancing code reliability and error detection in your codebase.
     }.squish
-  },
-  {
-    title: 'Build Apps with OpenAI and Node.js',
-    duration: '3 hours, 36 mins',
-    date_published: 24.days.from_now,
-    description: %{
-      Integrate Node.js with OpenAI to build advanced AI-powered applications. Learn to build AI chat interfaces, semantic search, document QA, function calling, and create AI images!
-    }.squish
-  },
-  {
-    title: 'Complete Intro to Product Management',
-    duration: '6 hours, 27 mins',
-    date_published: 24.days.from_now,
-    description: %{
-      Learn the role of a Product Manager in a technical environment – learn through real-world exercises to ideate, prioritize, and create roadmaps for projects.
-    }.squish
-  },
-  {
-    title: 'Getting a Software Engineering Job, v2',
-    duration: '3 hours, 31 mins',
-    date_published: 4.days.from_now,
-    description: %{
-      Learn to build a standout resume, GitHub profile, and portfolio. Plus, learn techniques to network to find your perfect job in today's software engineering job market.
-    }.squish
-  },
-  {
-    title: 'CSS Projects',
-    duration: '5 hours',
-    date_published: 24.days.from_now,
-    description: %{
-      Looking to practice your CSS skills? Work through five distinct projects to practice writing semantic HTML, mobile-first designs, media queries, and CSS layout techniques.
-    }.squish
-  },
-  {
-    title: 'Enterprise Cloud Infrastructure',
-    duration: '7 hours, 55 mins',
-    date_published: 14.days.from_now,
-    description: %{
-      Use DevOps to solve critical developer and business problems at scale. Set up large-scale systems with GitOps and optimized CI/CD workflows. And see strategies to standardize your organization's approach to AWS resource management and dynamic cloud orchestration.
-    }.squish
-  },
-  {
-    title: 'Tailwind CSS',
-    duration: '4 hours, 10 mins',
-    date_published: 66.days.from_now,
-    description: %{
-      Learn Tailwind CSS‘s utility-first approach for responsive, and customizable web designs. Master themes, layers, responsive breakpoints, dark mode, and more to create maintainable and visually appealing user interfaces!
-    }.squish
-  },
+  }
 ])
+
+
+
+# ======= #
+# Lessons #
+# ======= #
 
 Lesson.create!([
   {
-    title: 'Introduction',
-    duration: '6 mins, 6 secs',
+    # Course 1
+    # =========
+
+    title: 'Why Learn React',
+    duration: '12 mins',
     position: 1,
-    url: '',
-    course_id: 11
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 1,
+    prev: "",
+    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-nodejs"
   },
   {
-    title: 'What is Tailwind CSS',
-    duration: '6 mins, 16 secs',
+    title: 'Install NodeJS',
+    duration: '11 mins, 11 secs',
     position: 2,
-    url: '',
-    course_id: 11
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 1,
+    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/why-learn-react",
+    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-vite"
   },
   {
-    title: 'Utility First CSS and Layers',
-    duration: '9 mins, 32 secs',
+    title: 'Install Vite',
+    duration: '3 mins, 33 secs',
     position: 3,
-    url: '',
-    course_id: 11
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 1,
+    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-nodejs",
+    next: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/your-first-react-app"
   },
   {
-    title: 'Base Styles',
-    duration: '8 mins, 48 secs',
+    title: 'Your First React App',
+    duration: '4 mins, 19 secs',
     position: 4,
-    url: '',
-    course_id: 11
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 1,
+    prev: "http://localhost:3000/courses/complete-intro-to-react-v8/lessons/install-vite",
+    next: ""
   },
-  {
-    title: 'Theming and Named Colors',
-    duration: '8 mins, 14 secs',
-    position: 5,
-    url: '',
-    course_id: 11
-  },
-  {
-    title: 'Styling and Customizing Spacing',
-    duration: '9 mins, 12 secs',
-    position: 6,
-    url: '',
-    course_id: 11
-  },
-  {
-    title: 'Exercise - Styling a Modal',
-    duration: '5 mins, 12 secs',
-    position: 7,
-    url: '',
-    course_id: 11
-  },
+
+  # Course 2
+  # =========
+
   {
     title: 'Introduction',
-    duration: '2 mins, 11 secs',
+    duration: '4 mins, 22 secs',
     position: 1,
-    url: '',
-    course_id: 10
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 2,
+    prev: "",
+    next: "http://localhost:3000/courses/enterprise-typescript/lessons/setup"
   },
   {
-    title: 'The Three Ws',
-    duration: '8 mins, 10 secs',
+    title: 'Setup',
+    duration: '4 mins, 32 secs',
     position: 2,
-    url: '',
-    course_id: 10
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 2,
+    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/introduction",
+    next: "http://localhost:3000/courses/enterprise-typescript/lessons/course-project"
   },
   {
-    title: 'Organization Problems',
-    duration: '7 mins, 17 secs',
+    title: 'Course Project',
+    duration: '5 mins, 22 secs',
     position: 3,
-    url: '',
-    course_id: 10
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 2,
+    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/setup",
+    next: "http://localhost:3000/courses/enterprise-typescript/lessons/gitignore"
   },
   {
-    title: 'Source Control and Service Management',
-    duration: '6 mins, 2 secs',
+    title: 'GitIgnore',
+    duration: '5 mins, 22 secs',
     position: 4,
-    url: '',
-    course_id: 10
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 2,
+    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/course-project",
+    next: "http://localhost:3000/courses/enterprise-typescript/lessons/package-json"
   },
   {
-    title: 'Continuous Delivery and Continuous Integration',
-    duration: '10 mins, 10 secs',
+    title: 'Package.Json',
+    duration: '2 mins, 22 secs',
     position: 5,
-    url: '',
-    course_id: 10
-  },
-  {
-    title: 'Logging and Metrics',
-    duration: '6 mins, 7 secs',
-    position: 6,
-    url: '',
-    course_id: 10
-  },
-  {
-    title: 'Intro to Gitops',
-    duration: '9 mins, 9 secs',
-    position: 7,
-    url: '',
-    course_id: 10
-  },
-  {
-    title: 'Terraform & Pulumi',
-    duration: '8 mins, 46 secs',
-    position: 8,
-    url: '',
-    course_id: 10
-  },
-  {
-    title: 'Automation Providers',
-    duration: '10 mins, 30 secs',
-    position: 9,
-    url: '',
-    course_id: 10
-  },
-  {
-    title: 'Self-hosted vs Cloud Providers',
-    duration: '12 mins, 02 secs',
-    position: 10,
-    url: '',
-    course_id: 10
+    url: 'https://player.vimeo.com/video/902480723?h=51e4ebe95a',
+    course_id: 2,
+    prev: "http://localhost:3000/courses/enterprise-typescript/lessons/gitignore",
+    next: ""
   },
 ])
 
